@@ -1,43 +1,58 @@
-# Git Assignment – 1
+# 📘 Git Assignment – 1
 
 This repository contains the submission for **Assignment 1** of Git and GitHub basics.
+
+---
+
+## 📂 Repository Structure
+
+* `Git & GitHub/` → Contains Markdown files with important Git and Bash command references.
+* `Assignment_1.docx` → Contains the detailed internship task write-up for Assignment 1.
+
+---
 
 ## 📌 Tasks Covered
 
 ### ✅ Task 1: Repository Creation and Basic Operations
-- Initializing a Git repository
-- Creating and committing a README file
+
+* Initialize a Git repository
+* Create and commit initial files (like README)
 
 ### ✅ Task 2: Remote Repositories
-- Adding a remote GitHub repository
-- Pushing changes to remote
-- Cloning repositories
+
+* Add a remote GitHub repository
+* Push local commits to GitHub
+* Clone repositories from GitHub
 
 ### ✅ Task 3: Fetching and Pulling
-- Using `git fetch` to get remote updates
-- Using `git pull` to merge remote changes
+
+* Use `git fetch` to download changes
+* Use `git pull` to update and merge remote changes
 
 ### ✅ Task 4: Branching
-- Creating and switching branches
-- Making changes and committing on feature branch
-- Comparing branches
 
-### ✅ Task 5: Resetting and Moving Back
-- Resetting to previous commits (soft and hard)
-- Checking out specific commits
+* Create and switch between branches
+* Make and commit changes on different branches
+* Compare branches
 
-### ✅ Task 6: Creating Branches from Specific Commits
-- Creating branches from past commit hashes
+### ✅ Task 5: Resetting
 
-## 📁 Files Included
-- `Final_Professional_Git_Assignment_1.docx` – A well-formatted assignment report in Word format.
+* Reset to previous commits using soft or hard reset
+* Checkout previous commits
 
-## 🛠 Technologies Used
-- Git
-- GitHub
-- Command Line
+### ✅ Task 6: Branching from Past Commits
+
+* Create a new branch from a specific commit hash
 
 ---
 
-**Author:** Bhanu Sharma  
-**Date:** June 2025  
+## 🛠 Technologies Used
+
+* Git
+* GitHub
+* Command Line Interface (CLI)
+
+---
+
+**Author:** Bhanu Sharma
+**Date:** June 2025
