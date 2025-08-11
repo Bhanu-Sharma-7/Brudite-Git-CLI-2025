@@ -1,81 +1,57 @@
-# File/Folder se related Basic Git Bash Commands
+# 🚀 Essential Git Bash Commands Cheat Sheet
 
----
+## 📂 Basic Navigation
 
-1. `pwd` -> current folder dekhna ya tum kis directory me ho
-   - **Tip:** Jab bhi confuse ho ki kis folder me ho, yeh command use karo.
+| Command | Description | Example | Tips |
+|---------|-------------|---------|------|
+| `pwd` | Print current directory path | `pwd` → `/c/Users/Name` | Always know your location |
+| `ls` | List directory contents | `ls -l` | Use `-l` for details, `-t` to sort by time |
+| `ls -a` | Show hidden files | `ls -a` | Reveals `.git`, `.env` files |
 
----
+## 📁 Directory Operations
 
-2. `ls` -> folder ke under dekhna ya current folder ke under kya kya hai
-   - **Example:** `ls` likhne par sab files aur folders dikh jayenge.
+| Command | Description | Example | Tips |
+|---------|-------------|---------|------|
+| `cd` | Change directory | `cd Projects` | `cd ..` goes up one level |
+| `mkdir` | Create directory | `mkdir -p src/{main,test}` | Creates nested folders |
+| `rmdir` | Remove empty directory | `rmdir empty_folder` | Safer than `rm -r` |
 
----
+## 📄 File Operations
 
-3. `ls -a` -> hidden files ko dekhna ya isse tum `.git` jesi hidden files ko bhi dekh skte ho
-   - **Tip:** Git ka hidden folder `.git` bhi yahi se dikhega.
+| Command | Description | Example | Tips |
+|---------|-------------|---------|------|
+| `touch` | Create file | `touch index.html` | Updates timestamp if exists |
+| `echo` | Create/file content | `echo "Hi" > file.txt` | `>>` appends, `>` overwrites |
+| `cat` | Show file content | `cat config.yml` | `cat > file` creates with input |
+| `mv` | Move/rename | `mv old.txt new.txt` | Also moves between directories |
 
----
+## 🗑️ Deletion Commands
 
-4. `cd folderName` -> folder ke under jana
-   - **Example:** `cd Documents` se Documents folder me chale jao.
+| Command | Description | Example | Warning |
+|---------|-------------|---------|---------|
+| `rm` | Remove file | `rm temp.txt` | Permanent deletion |
+| `rm -r` | Remove directory | `rm -r node_modules/` | Deletes recursively |
+| `rm -f` | Force delete | `rm -f *.log` | No confirmation |
 
----
+## 🔍 Search & Inspection
 
-5. `cd ..` -> ek level pichhe aana like kisi folder se bahar aana
-   - **Tip:** Har bar ek level bahar aane ke liye use karo.
+| Command | Description | Example | Options |
+|---------|-------------|---------|---------|
+| `find` | Find files | `find . -name "*.js"` | `-size +1M`, `-mtime -7` |
+| `grep` | Search text | `grep "error" logs.txt` | `-i` case-insensitive, `-r` recursive |
 
----
+## 🛠️ Utility Commands
 
-6. `mkdir folderName` -> naya folder bnana
-   - **Example:** `mkdir test` se test naam ka folder banega.
+| Command | Description | Shortcut | Tip |
+|---------|-------------|----------|-----|
+| `clear` | Clear screen | `Ctrl+L` | Keeps history |
+| `history` | Command history | `!23` | Re-run 23rd command |
+| `code .` | Open in VS Code | - | Requires VS Code |
 
----
+## ⚡ Power User Tips
 
-7. `mkdir folderName folderName folderName` -> ek saath 3 folder bnana isi trh aap 3 se jyada bhi bna skte ho
-   - **Example:** `mkdir a b c` teen alag folders ban jayenge.
-
----
-
-8. `touch fileName.txt` -> nayi file bnana ya empty file ko bnana
-   - **Example:** `touch notes.txt` se notes.txt file banegi.
-
---- 
-
-9. `echo "write some text here" >> fileName.txt` -> file ke under kuchh likhna
-   - **Example:** `echo "Hello" >> notes.txt` se notes.txt me Hello add ho jayega.
-
----
-
-10. `mv oldFileName.txt newFileName.txt` -> file ke naam ko badlna
-   - **Example:** `mv notes.txt mynotes.txt` se file ka naam change ho jayega.
-
----
-
-11. `mv oldFolderName newFolderName` -> folder ka naam change krna
-   - **Example:** `mv test demo` se test folder ka naam demo ho jayega.
-
----
-
-12. `rm fileName.txt` -> file ko delete krna
-   - **Warning:** Delete ki hui file wapas nahi aati.
-
----
-
-13. `rm -r folderName` -> folder ko delete krna
-   - **Warning:** Folder ke andar ki saari files bhi delete ho jayengi.
-
----
-
-14. `clear` -> terminal ko saaf krna
-   - **Tip:** Terminal clutter ho to use karo.
-
----
-
-## Extra Daily-use Commands
-
-15. `cat fileName.txt` -> File ka content terminal me dikhata hai.
-
-16. `code .` -> (Agar VS Code install hai) Current folder VS Code me kholne ke liye.
-
-17. `history` -> Ab tak use kiye gaye commands ki list dikhata hai.
+### Wildcards
+```bash
+*.txt       # All text files
+project-??  # Files like project-01
+[A-Z]*      # Uppercase starting files
