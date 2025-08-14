@@ -39,6 +39,3 @@ Welcome! Yeh repository specially beginners ke liye banayi gayi hai jo Git aur G
 * Command Line Interface (CLI)
 
 ---
-
-**Author:** Bhanu Sharma  
-**Date:** June 2025
