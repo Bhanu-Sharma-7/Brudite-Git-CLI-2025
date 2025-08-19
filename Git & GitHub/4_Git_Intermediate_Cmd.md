@@ -81,4 +81,3 @@ Ye file un logon ke liye hai jo basic Git commands seekh chuke hain aur ab inter
 - Team me kaam karte ho to push/pull se pehle baaki members ko batao.
 - Kabhi bhi `git reset --hard` bina soch samjhe mat use karo.
 - Regularly `git fetch` aur `git pull` karte raho taaki code updated rahe.
-
